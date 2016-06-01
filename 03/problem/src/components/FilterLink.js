@@ -6,7 +6,7 @@ const FilterLink = ({ filter, children }) => (
     to={filter === 'all' ? '' : filter}
     activeStyle={{
       textDecoration: 'none',
-      color: 'black',
+      color: 'black'
     }}
   >
     {children}
@@ -15,7 +15,7 @@ const FilterLink = ({ filter, children }) => (
 
 FilterLink.propTypes = {
   filter: PropTypes.oneOf(['all', 'completed', 'active']).isRequired,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default FilterLink;
