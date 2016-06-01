@@ -23,11 +23,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onTodoClick: (id) => {
-      dispatch({
-        type: 'TOGGLE_TODO',
-        id,
-      });
-    },
+      dispatch({ type: 'TOGGLE_TODO', id });
+    }
   };
 };
 
