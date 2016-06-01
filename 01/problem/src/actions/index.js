@@ -16,5 +16,5 @@ export const setVisibilityFilter = filter => ({
 export const addTodo = text => ({
     type: 'ADD_TODO',
     id: (nextTodoId++).toString(),
-    text,
-})
+    text
+});
